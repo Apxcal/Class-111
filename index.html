@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Hand Gesture Web App</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>   
+    </head>
+    <body class="body">
+      <div class="container">
+        <center>
+        <h2>Hand Gesture Web App &#128076; &#128077; &#9996;</h2>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam View - </label>
+            <div id="camera"></div>
+            <br><br>
+            <button class="btn btn-warning" onclick="capture()">Capture Image</button>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Result</label>
+            <p id="pred1" class="emotion_name"></p>
+            <p id="update1" class="emoji"></p>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+              <label>Snapshot - </label>
+            <div id="result"></div>
+            <br><br>
+            <button class="btn btn-success" onclick="predict()">Predict Hand Gesture</button>
+          </div>
+    
+        </center>
+        </div>
+      </body>
+</center>
+</html>
